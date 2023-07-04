@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__TQLgBoBEe6MaoJrErw7pQ" name="DiagramaClases">
+  <packagedElement xmi:type="uml:Package" xmi:id="_RTr40BoHEe6MaoJrErw7pQ" name="Paquetería" URI=""/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_hR0l8BoGEe6MaoJrErw7pQ" name="String"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_ihlksBoGEe6MaoJrErw7pQ" name="Integer"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_izdX0BoGEe6MaoJrErw7pQ" name="Char"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xEILoBoHEe6MaoJrErw7pQ" name="IniciarSesion" visibility="public">
+    <ownedOperation xmi:id="_etG3YBoPEe6MaoJrErw7pQ" name="Registrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3K7KwBoHEe6MaoJrErw7pQ" name="Splash">
+    <ownedOperation xmi:id="_JbwZoBoPEe6MaoJrErw7pQ" name="Mostrar"/>
+    <ownedOperation xmi:id="_LcMnYBoPEe6MaoJrErw7pQ" name="Desaparecer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9gLcoBoHEe6MaoJrErw7pQ" name="RealizarPago"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DBmd0BoIEe6MaoJrErw7pQ" name="Transferencia">
+    <generalization xmi:id="_HYaGABoIEe6MaoJrErw7pQ" general="_9gLcoBoHEe6MaoJrErw7pQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EirPABoIEe6MaoJrErw7pQ" name="Deposito">
+    <generalization xmi:id="_HyTMsBoIEe6MaoJrErw7pQ" general="_9gLcoBoHEe6MaoJrErw7pQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NqFfcBoIEe6MaoJrErw7pQ" name="EnviarFacturaElectronica"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aaoZwBoIEe6MaoJrErw7pQ" name="PresentarCatalogo"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ePUMUBoIEe6MaoJrErw7pQ" name="ConsultarComprasRealizadas"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j7ed4BoIEe6MaoJrErw7pQ" name="GenerarReportesEstadisticos"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_md_d8BoIEe6MaoJrErw7pQ" name="Autentificación"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oFsbkBoIEe6MaoJrErw7pQ" name="VentanaApp">
+    <ownedOperation xmi:id="_WSWRkBoPEe6MaoJrErw7pQ" name="Mostrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ms1VwBoJEe6MaoJrErw7pQ" name="Correo">
+    <generalization xmi:id="_I1YgsBoQEe6MaoJrErw7pQ" general="_NqFfcBoIEe6MaoJrErw7pQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nC3QIBoJEe6MaoJrErw7pQ" name="Whatsapp">
+    <generalization xmi:id="_JQ4w8BoQEe6MaoJrErw7pQ" general="_NqFfcBoIEe6MaoJrErw7pQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sKIE4BoJEe6MaoJrErw7pQ" name="CodigoQR">
+    <ownedOperation xmi:id="_6TeL4BoOEe6MaoJrErw7pQ" name="GenerarQR"/>
+    <ownedOperation xmi:id="_6caFcBoOEe6MaoJrErw7pQ" name="EscanearQR"/>
+    <ownedOperation xmi:id="_DwdjYBoSEe6MaoJrErw7pQ" name="VisualizarQR"/>
+  </packagedElement>
+</uml:Model>
