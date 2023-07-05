@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__TQLgBoBEe6MaoJrErw7pQ" name="DiagramaClases">
-  <packagedElement xmi:type="uml:Package" xmi:id="_RTr40BoHEe6MaoJrErw7pQ" name="Paquetería" URI=""/>
-  <packagedElement xmi:type="uml:DataType" xmi:id="_hR0l8BoGEe6MaoJrErw7pQ" name="String"/>
-  <packagedElement xmi:type="uml:DataType" xmi:id="_ihlksBoGEe6MaoJrErw7pQ" name="Integer"/>
-  <packagedElement xmi:type="uml:DataType" xmi:id="_izdX0BoGEe6MaoJrErw7pQ" name="Char"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RTr40BoHEe6MaoJrErw7pQ" name="pkUI" URI=""/>
   <packagedElement xmi:type="uml:Class" xmi:id="_xEILoBoHEe6MaoJrErw7pQ" name="IniciarSesion" visibility="public">
-    <ownedOperation xmi:id="_etG3YBoPEe6MaoJrErw7pQ" name="Registrar"/>
+    <ownedAttribute xmi:id="_pi_yQBsUEe6JGpjxWQjJAA" name="Autentificación" type="_md_d8BoIEe6MaoJrErw7pQ" association="_pi-kIBsUEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pi_yQRsUEe6JGpjxWQjJAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pi_yQhsUEe6JGpjxWQjJAA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_R7KI0RsVEe6JGpjxWQjJAA" name="" type="_-nT5kBsUEe6JGpjxWQjJAA" association="_R7KI0BsVEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R7KI0hsVEe6JGpjxWQjJAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R7Kv4BsVEe6JGpjxWQjJAA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_etG3YBoPEe6MaoJrErw7pQ" name="registrarNuevoUsuario"/>
+    <ownedOperation xmi:id="_Z3lpUBsUEe6JGpjxWQjJAA" name="ingresarUsuarioRegistrado"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_3K7KwBoHEe6MaoJrErw7pQ" name="Splash">
-    <ownedOperation xmi:id="_JbwZoBoPEe6MaoJrErw7pQ" name="Mostrar"/>
-    <ownedOperation xmi:id="_LcMnYBoPEe6MaoJrErw7pQ" name="Desaparecer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3K7KwBoHEe6MaoJrErw7pQ" name="PantallaInicio">
+    <ownedAttribute xmi:id="_Rbua0RsVEe6JGpjxWQjJAA" name="" type="_-nT5kBsUEe6JGpjxWQjJAA" association="_Rbua0BsVEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rbua0hsVEe6JGpjxWQjJAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RbvB4BsVEe6JGpjxWQjJAA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JbwZoBoPEe6MaoJrErw7pQ" name="mostrarPantalla"/>
+    <ownedOperation xmi:id="_LcMnYBoPEe6MaoJrErw7pQ" name="desaparecer"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_9gLcoBoHEe6MaoJrErw7pQ" name="RealizarPago"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_DBmd0BoIEe6MaoJrErw7pQ" name="Transferencia">
@@ -19,12 +29,27 @@
     <generalization xmi:id="_HyTMsBoIEe6MaoJrErw7pQ" general="_9gLcoBoHEe6MaoJrErw7pQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_NqFfcBoIEe6MaoJrErw7pQ" name="EnviarFacturaElectronica"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_aaoZwBoIEe6MaoJrErw7pQ" name="PresentarCatalogo"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aaoZwBoIEe6MaoJrErw7pQ" name="Catalogo">
+    <ownedOperation xmi:id="_UbmsUBsVEe6JGpjxWQjJAA" name="mostrarHabitaciones"/>
+    <ownedOperation xmi:id="_XiwDcBsVEe6JGpjxWQjJAA" name="mostrarPrecios"/>
+    <ownedOperation xmi:id="_ZWR2kBsVEe6JGpjxWQjJAA" name="mostrarDisponibilidad"/>
+    <ownedOperation xmi:id="_ZYrDQBsVEe6JGpjxWQjJAA" name="mostrarHorarios"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ePUMUBoIEe6MaoJrErw7pQ" name="ConsultarComprasRealizadas"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_j7ed4BoIEe6MaoJrErw7pQ" name="GenerarReportesEstadisticos"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_md_d8BoIEe6MaoJrErw7pQ" name="Autentificación"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_oFsbkBoIEe6MaoJrErw7pQ" name="VentanaApp">
-    <ownedOperation xmi:id="_WSWRkBoPEe6MaoJrErw7pQ" name="Mostrar"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_md_d8BoIEe6MaoJrErw7pQ" name="Autentificación">
+    <ownedAttribute xmi:id="_pi_LMBsUEe6JGpjxWQjJAA" name="iniciarSesion" type="_xEILoBoHEe6MaoJrErw7pQ" association="_pi-kIBsUEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pi_LMRsUEe6JGpjxWQjJAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pi_LMhsUEe6JGpjxWQjJAA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oFsbkBoIEe6MaoJrErw7pQ" name="PantallaAcceso">
+    <ownedAttribute xmi:id="_rCtcERsVEe6JGpjxWQjJAA" name="" type="_-nT5kBsUEe6JGpjxWQjJAA" association="_rCtcEBsVEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rCtcEhsVEe6JGpjxWQjJAA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rCtcExsVEe6JGpjxWQjJAA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_WSWRkBoPEe6MaoJrErw7pQ" name="mostrarPantalla"/>
+    <ownedOperation xmi:id="__fsIgBsTEe6JGpjxWQjJAA" name="desaparecer"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ms1VwBoJEe6MaoJrErw7pQ" name="Correo">
     <generalization xmi:id="_I1YgsBoQEe6MaoJrErw7pQ" general="_NqFfcBoIEe6MaoJrErw7pQ"/>
@@ -33,8 +58,32 @@
     <generalization xmi:id="_JQ4w8BoQEe6MaoJrErw7pQ" general="_NqFfcBoIEe6MaoJrErw7pQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_sKIE4BoJEe6MaoJrErw7pQ" name="CodigoQR">
-    <ownedOperation xmi:id="_6TeL4BoOEe6MaoJrErw7pQ" name="GenerarQR"/>
-    <ownedOperation xmi:id="_6caFcBoOEe6MaoJrErw7pQ" name="EscanearQR"/>
-    <ownedOperation xmi:id="_DwdjYBoSEe6MaoJrErw7pQ" name="VisualizarQR"/>
+    <ownedOperation xmi:id="_6TeL4BoOEe6MaoJrErw7pQ" name="generarQR"/>
+    <ownedOperation xmi:id="_6caFcBoOEe6MaoJrErw7pQ" name="escanearQR"/>
+    <ownedOperation xmi:id="_DwdjYBoSEe6MaoJrErw7pQ" name="visualizarQR"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pi-kIBsUEe6JGpjxWQjJAA" memberEnd="_pi_LMBsUEe6JGpjxWQjJAA _pi_yQBsUEe6JGpjxWQjJAA"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_2ln7EBsUEe6JGpjxWQjJAA" name="pkLB"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_23HTsBsUEe6JGpjxWQjJAA" name="pkBD"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-nT5kBsUEe6JGpjxWQjJAA" name="App">
+    <ownedAttribute xmi:id="_RbvB4RsVEe6JGpjxWQjJAA" name="pantallaInicio" type="_3K7KwBoHEe6MaoJrErw7pQ" association="_Rbua0BsVEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RbvB4hsVEe6JGpjxWQjJAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RbvB4xsVEe6JGpjxWQjJAA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_R7L-ABsVEe6JGpjxWQjJAA" name="iniciarSesion" type="_xEILoBoHEe6MaoJrErw7pQ" association="_R7KI0BsVEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R7L-ARsVEe6JGpjxWQjJAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R7MlEBsVEe6JGpjxWQjJAA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rCtcFBsVEe6JGpjxWQjJAA" name="pantallaAcceso" type="_oFsbkBoIEe6MaoJrErw7pQ" association="_rCtcEBsVEe6JGpjxWQjJAA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rCtcFRsVEe6JGpjxWQjJAA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rCuDIBsVEe6JGpjxWQjJAA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_BZnCEBsVEe6JGpjxWQjJAA" name="main">
+      <ownedParameter xmi:id="_JNWrMBsVEe6JGpjxWQjJAA" name="args" type="_FD7XsBsVEe6JGpjxWQjJAA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_FD7XsBsVEe6JGpjxWQjJAA" name="String []"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Rbua0BsVEe6JGpjxWQjJAA" memberEnd="_Rbua0RsVEe6JGpjxWQjJAA _RbvB4RsVEe6JGpjxWQjJAA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_R7KI0BsVEe6JGpjxWQjJAA" memberEnd="_R7KI0RsVEe6JGpjxWQjJAA _R7L-ABsVEe6JGpjxWQjJAA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rCtcEBsVEe6JGpjxWQjJAA" memberEnd="_rCtcERsVEe6JGpjxWQjJAA _rCtcFBsVEe6JGpjxWQjJAA"/>
 </uml:Model>
